@@ -1,76 +1,88 @@
-/* Background Image & General Styles */
+/* 🌟 Smart Secure Booking Page */
 .secure-seat-container {
-  background: url("https://source.unsplash.com/1600x900/?train,travel") no-repeat center center/cover;
+  text-align: center;
+  padding: 40px;
+  color: rgb(0, 0, 0);
   min-height: 100vh;
+  border-radius: 10px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
 }
 
-/* Premium Styling for Cards */
-.premium-card {
-  background: rgba(255, 255, 255, 0.9);
+/* ✨ Title Styling */
+.secure-seat-container h2 {
+  font-size: 28px;
+  font-weight: bold;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  margin: 15px;
-  width: 300px;
-}
-
-/* Buttons */
-.premium-button {
-  background: #ff6600;
+  background: linear-gradient(90deg, #ff8c00, #ff0080);
+  /* -webkit-background-clip: text; */
   color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  margin: 5px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  border-radius: 10px;
+
 }
 
-.premium-button:hover {
-  background: #cc5500;
+.secure-seat-container h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ddd;
+  padding: 25px;
 }
 
-/* Seat Options */
+/* 🪑 Seat Cards */
 .secure-seat-options {
   display: flex;
-  gap: 15px;
   justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
 }
 
 .seat-card {
-  padding: 15px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  width: 250px;
-}
-
-/* Passenger Form */
-.passenger-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 20px;
-}
-
-/* Ticket Section */
-.ticket-section {
-  margin-top: 20px;
-  padding: 20px;
-  border-radius: 12px;
+  border-radius: 15px;
   text-align: center;
+  width: 280px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.ticket-section p {
+.seat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 18px rgba(255, 255, 255, 0.3);
+}
+
+.seat-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffdd57;
+}
+
+.seat-card p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 🔙 Back Button */
+.back-btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ff8c00, #ff0080);
+  color: white;
   font-size: 16px;
   font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.3);
 }

@@ -1,17 +1,50 @@
+/* 🚆 No Trains Available Container */
 .no-trains-container {
-    text-align: center;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);  /* Less opacity for a softer look */
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(4px);  /* Reduced blur effect */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.no-trains-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.12);
+}
+
+/* 🎟️ Secure Ticket Button */
+.secure-ticket-btn {
+  background: linear-gradient(90deg, #ff7f00, #ff0048);
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.secure-ticket-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 12px rgba(255, 102, 0, 0.35);
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 768px) {
+  .no-trains-container {
+    width: 90%;
   }
   
   .secure-ticket-btn {
-    background: #ff6600;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 15px;
+    width: 100%;
+    padding: 14px;
   }
-  
+}

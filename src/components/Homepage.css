@@ -1,7 +1,7 @@
 /* General Styling */
 body {
     font-family: 'Poppins', sans-serif;
-        background: url('./codekumbhBG.png') no-repeat center center fixed;
+        background: url('./MainBG2.jpeg') no-repeat center center fixed;
         background-size: cover;
         margin: 0;
         padding: 0;
@@ -197,7 +197,7 @@ body {
 
 /* ======= BUTTON STYLING ======= */
 .register-btn {
-  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  background: linear-gradient(135deg, #3fc2ff, #20a3f4);
   color: white;
   padding: 10px 16px;
   border-radius: 8px;
@@ -207,16 +207,16 @@ body {
 }
 
 .register-btn:hover {
-  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  background: linear-gradient(135deg, #24d0ef, #00bfff);
   transform: scale(1.05);
 }
 
 
 #title{
   color: white;
-  font-size: larger;
+  font-size: 40px;
   font-weight: bolder;
-}
+  font-family:Georgia, 'Times New Roman', Times, serif;}
 
 #login-btn{
   background: linear-gradient(135deg, #0082e6, #1fa5ff);

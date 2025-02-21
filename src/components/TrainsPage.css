@@ -1,80 +1,111 @@
-/* Trains Page Main Container */
-
+/* 🌟 Trains Page Main Container */
 .trains-page-container {
   padding: 80px 20px;
   text-align: center;
-  background: url();
+  /* background: linear-gradient(135deg, #f3f4f6, #e0e7ff); */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Header Styling */
+/* 🎨 Header Styling */
 .trains-header {
-  background: linear-gradient(270deg, #79baff, #a36aff, #43a4ff);
+  background: linear-gradient(270deg, rgba(121, 186, 255, 0.9), rgba(163, 106, 255, 0.9), rgba(67, 164, 255, 0.9));
   background-size: 400% 400%;
   animation: gradientMove 6s infinite alternate;
   color: white;
-  padding: 25px;
+  padding: 30px;
   border-radius: 12px;
-  margin-bottom: 25px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease-in-out;
-  width: 80%;
+  width: 85%;
+  max-width: 900px;
 }
 
 .trains-header:hover {
   transform: scale(1.03);
 }
 
-/* Date Information */
+/* 🗓️ Date Information */
 .date-info {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   margin-top: 8px;
   letter-spacing: 1px;
-  color: #FFD700;
+  color: #ffdd57;
 }
 
-/* Train List Styling */
+/* 🚆 Train List Styling */
+.train-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 85%;
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+/* 🚆 Train Card Styling - Larger and Centered */
 .train-card {
   background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  border-radius: 10px;
-  width: 80%;
-  margin: 15px auto;
-  text-align: left;
+  backdrop-filter: blur(5px);
+  padding: 40px; /* More padding for larger size */
+  border-radius: 16px;
+  width: 100%;
+  min-height: 180px; /* Ensures a larger card than content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers text vertically */
+  align-items: center; /* Centers text horizontally */
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 20px; /* Increases text size */
+  font-weight: bold;
 }
 
 .train-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.3);
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.2);
 }
 
-/* Smart Secure Section */
-.smart-secure-container {
+/* ❌ No Direct Trains Section */
+.no-direct-trains {
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(15px);
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  width: 70%;
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  width: 75%;
+  max-width: 850px;
   text-align: center;
   margin-top: 20px;
 }
 
+/* 🎟️ Smart Secure Section */
+.smart-secure-container {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(6px);
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  width: 75%;
+  max-width: 850px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* ✅ Smart Secure & Cancel Buttons */
 .smart-secure-btn, .cancel-secure-btn {
-  padding: 12px 25px;
-  font-size: 16px;
+  padding: 14px 30px;
+  font-size: 18px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  margin: 10px;
+  margin: 12px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -85,24 +116,48 @@
 }
 
 .cancel-secure-btn {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.25);
   color: black;
   font-weight: bold;
 }
 
 .smart-secure-btn:hover, .cancel-secure-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.3);
+  transform: scale(1.06);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 
-/* Gradient Animation */
+/* ✨ Soft Gradient Animation */
 @keyframes gradientMove {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
   100% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
 }
 
-  
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .trains-header {
+    width: 95%;
+  }
+
+  .train-list {
+    width: 95%;
+  }
+
+  .train-card {
+    min-height: 160px; /* Adjusts size for smaller screens */
+    font-size: 18px;
+  }
+
+  .no-direct-trains,
+  .smart-secure-container {
+    width: 90%;
+  }
+
+  .smart-secure-btn, .cancel-secure-btn {
+    width: 100%;
+    padding: 16px;
+  }
+}
