@@ -1,0 +1,17 @@
+.no-trains-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .secure-ticket-btn {
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  

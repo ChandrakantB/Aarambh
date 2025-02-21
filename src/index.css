@@ -1,0 +1,147 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Homepage Background */
+  .homepage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background: url('./components/codekumbhBG.png') no-repeat center center/cover; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Dark Overlay */
+  .homepage-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Darkens the background for readability */
+  }
+  
+  /* Homepage Content */
+  .homepage-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .homepage-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .homepage-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  
+  /* Search Form */
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .search-form label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  .search-form select,
+  .search-form input {
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    color: #333;
+    outline: none;
+  }
+  
+  .search-form button {
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background: #ff9800;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .search-form button:hover {
+    background: #e68900;
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .navbar-logo {
+    /* color: white; */
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-links a {
+    color: white;
+    margin-left: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #ff9800;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer p {
+    opacity: 0.8;
+  }
+  

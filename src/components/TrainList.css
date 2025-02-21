@@ -1,0 +1,111 @@
+.train-list {
+  position: relative;
+  transition: filter 0.3s ease-in-out;
+}
+
+.blur-background {
+  filter: blur(4px);
+}
+
+.train-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.train-card:hover {
+  transform: scale(1.03);
+}
+
+/* Secure Seat Modal */
+.secure-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 10;
+  width: 350px;
+}
+
+.secure-seat-options {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.seat-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Button Styles */
+button {
+  display: inline-block;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  font-size: 14px;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Book Now Button */
+.book-btn {
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.book-btn:hover {
+  background: #0056b3;
+}
+
+/* Secure Seat Button */
+.secure-seat-btn {
+  background: #ff6b6b;
+  color: white;
+  font-weight: bold;
+}
+
+.secure-seat-btn:hover {
+  background: #ff3b3b;
+}
+
+/* Confirm Button */
+.confirm-btn {
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+}
+
+.confirm-btn:hover {
+  background: #218838;
+}
+
+/* Cancel Button */
+.cancel-btn {
+  background: #6c757d;
+  color: white;
+  font-weight: bold;
+}
+
+.cancel-btn:hover {
+  background: #545b62;
+}

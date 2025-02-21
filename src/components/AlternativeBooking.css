@@ -1,0 +1,118 @@
+.alternative-booking-container {
+    text-align: center;
+    background: linear-gradient(135deg, rgba(168, 133, 255, 0.9), rgba(255, 126, 126, 0.9));
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+    max-width: 500px;
+    margin: auto;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Alternative options card layout */
+.alternative-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.option-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.option-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
+}
+
+.booking-form input, .booking-form select {
+    display: block;
+    margin: 12px auto;
+    padding: 10px;
+    width: 85%;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.booking-form input:focus, .booking-form select:focus {
+    border-color: white;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Smart Select Button */
+.smart-select-btn {
+    background: linear-gradient(90deg, #ffc278, #ff68b4);
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.smart-select-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 12px rgba(255, 140, 0, 0.8);
+}
+
+/* Ticket Styling */
+.ticket {
+    background: #988c8c;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+    color: white;
+    max-width: 450px;
+    margin: auto;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+.ticket h2 {
+    color: #FFD700;
+}
+
+.qr-code {
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+  
